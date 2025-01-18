@@ -48,8 +48,9 @@ overflow: visible;
 }
 </style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -60,7 +61,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
 { counter-reset: source-line 0; }
@@ -366,7 +367,7 @@ this marker</li>
 <col width="56%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th align="left">Hex</th>
 <th align="left">Marker</th>
 <th align="left">Name</th>
@@ -374,91 +375,91 @@ this marker</li>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="left">ffc0</td>
 <td align="left">SOF0</td>
 <td align="left">Start of Frame 0</td>
 <td align="left">Baseline DCT</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">ffc1</td>
 <td align="left">SOF1</td>
 <td align="left">Start of Frame 1</td>
 <td align="left">Extended Sequential DCT</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">ffc2</td>
 <td align="left">SOF2</td>
 <td align="left">Start of Frame 2</td>
 <td align="left">Progressive DCT</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">ffc3</td>
 <td align="left">SOF3</td>
 <td align="left">Start of Frame 3</td>
 <td align="left">Lossless (sequential)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">ffc4</td>
 <td align="left">DHT</td>
 <td align="left">Define Huffman Table</td>
 <td align="left">NA</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">ffc5</td>
 <td align="left">SOF5</td>
 <td align="left">Start of Frame 5</td>
 <td align="left">Differential sequential DCT</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">ffc6</td>
 <td align="left">SOF6</td>
 <td align="left">Start of Frame 6</td>
 <td align="left">Differential progressive DCT</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">ffc7</td>
 <td align="left">SOF7</td>
 <td align="left">Start of Frame 7</td>
 <td align="left">Differential lossless (sequential)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">ffc8</td>
 <td align="left">JPG</td>
 <td align="left">JPEG Extensions</td>
 <td align="left">NA</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">ffc9</td>
 <td align="left">SOF9</td>
 <td align="left">Start of Frame 9</td>
 <td align="left">Extended sequential DCT, Arithmetic coding</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">ffca</td>
 <td align="left">SOF10</td>
 <td align="left">Start of Frame 10</td>
 <td align="left">Progressive DCT, Arithmetic coding</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">ffcb</td>
 <td align="left">SOF11</td>
 <td align="left">Start of Frame 11</td>
 <td align="left">Lossless (sequential), Arithmetic coding</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">ffcc</td>
 <td align="left">DAC</td>
 <td align="left">Define Arithmetic Coding</td>
 <td align="left">NA</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">ffcd</td>
 <td align="left">SOF13</td>
 <td align="left">Start of Frame 13</td>
 <td align="left">Differential sequential DCT, Arithmetic coding</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">ffce</td>
 <td align="left">SOF14</td>
 <td align="left">Start of Frame 14</td>

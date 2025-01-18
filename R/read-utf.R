@@ -69,9 +69,9 @@ read_str <- function(con) {
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 read_str_raw <- function(con, n) {
   vec <- read_raw(con, n)
-  res <- rawToChar(vec)
+  do_eof_check(con, n, length(vec))
   
-  do_eof_check(con, n, nchar(res))
+  res <- rawToChar(vec)
   res
 }
 
@@ -113,7 +113,7 @@ read_utf8_raw <- function(con, n) {
   raw_vec <- read_raw(con, n = n)
   
   # Convert string to UTF-8 and return
-  res <- intToUtf8(as.integer(raw_vec))
+  res <- iconv(list(raw_vec), from = "UTF-8")
   
   do_eof_check(con, 1, length(res))
   res

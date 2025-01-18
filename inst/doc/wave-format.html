@@ -48,8 +48,9 @@ overflow: visible;
 }
 </style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -60,7 +61,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
 { counter-reset: source-line 0; }
@@ -359,81 +360,81 @@ below.</p>
 <col width="81%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th align="left">Positions</th>
 <th align="left">Sample.Value</th>
 <th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="left">1 - 4</td>
 <td align="left">‘RIFF’</td>
 <td align="left">Marks the file as a riff file. Characters are each 1
 byte long.</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">5 - 8</td>
 <td align="left">File size (integer)</td>
 <td align="left">Size of the overall file - 8 bytes, in bytes (32-bit
 integer). Typically, you’d fill this in after creation.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">9 -12</td>
 <td align="left">“WAVE”</td>
 <td align="left">File Type Header. For our purposes, it always equals
 “WAVE”.</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">13-16</td>
 <td align="left">‘fmt’</td>
 <td align="left">Format chunk marker. Includes trailing space</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">17-20</td>
 <td align="left">16</td>
 <td align="left">Length of format data as listed above</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">21-22</td>
 <td align="left">1</td>
 <td align="left">Type of format (1 is PCM) - 2 byte integer</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">23-24</td>
 <td align="left">2</td>
 <td align="left">Number of Channels - 2 byte integer</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">25-28</td>
 <td align="left">44100</td>
 <td align="left">Sample Rate - 32 byte integer. Common values are 44100
 (CD), 48000 (DAT). Sample Rate = Number of Samples per second, or
 Hertz.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">29-32</td>
 <td align="left">176400</td>
 <td align="left">(Sample Rate * BitsPerSample * Channels) / 8.</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">33-34</td>
 <td align="left">4</td>
 <td align="left">(BitsPerSample * Channels) / 8. (1) 8 bit mono (2) - 8
 bit stereo/16 bit mono (4) - 16 bit stereo</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">35-36</td>
 <td align="left">16</td>
 <td align="left">Bits per sample</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left">37-40</td>
 <td align="left">‘data’</td>
 <td align="left">data chunk header. Marks the beginning of the data
 section.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left">41-44</td>
 <td align="left">File size (data)</td>
 <td align="left">Size of the data section.</td>

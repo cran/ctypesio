@@ -52,9 +52,9 @@ write_int16(con, audio)
 close(con)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  library(audio)
-#  wav <- audio::load.wave(wav_file)
-#  audio::play(wav)
+# library(audio)
+# wav <- audio::load.wave(wav_file)
+# audio::play(wav)
 
 ## -----------------------------------------------------------------------------
 con <- file(wav_file, "rb")
@@ -77,23 +77,23 @@ data <- read_uint16(con, data_size / 2) # read in 16-bit samples
 close(con)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  wav_file <- tempfile(fileext = ".wav")
-#  con <- file(wav_file, "wb")
-#  
-#  write_utf8_raw(con, "RIFF") |>
-#    write_uint32(length(audio) * 2 + 44 - 8) |> # total file length - 8
-#    write_utf8_raw("WAVE")           |>
-#    write_utf8_raw("fmt ")           |>
-#    write_uint32(16)                 |> # size of header so far
-#    write_uint16(1)                  |> # sample format = 2-byte integer
-#    write_uint16(1)                  |> # single channel
-#    write_uint32(44100)              |> # sample rate
-#    write_uint32(44100 * 16 * 1 / 8) |> # rate * bits * channels / 8
-#    write_uint16(2)                  |> # 16-bit mono audio
-#    write_uint16(16)                 |> # bits per sample
-#    write_utf8_raw('data')           |>
-#    write_uint32(length(audio) * 2)  |> # sampled data size
-#    write_int16(audio)
-#  
-#  close(con)
+# wav_file <- tempfile(fileext = ".wav")
+# con <- file(wav_file, "wb")
+# 
+# write_utf8_raw(con, "RIFF") |>
+#   write_uint32(length(audio) * 2 + 44 - 8) |> # total file length - 8
+#   write_utf8_raw("WAVE")           |>
+#   write_utf8_raw("fmt ")           |>
+#   write_uint32(16)                 |> # size of header so far
+#   write_uint16(1)                  |> # sample format = 2-byte integer
+#   write_uint16(1)                  |> # single channel
+#   write_uint32(44100)              |> # sample rate
+#   write_uint32(44100 * 16 * 1 / 8) |> # rate * bits * channels / 8
+#   write_uint16(2)                  |> # 16-bit mono audio
+#   write_uint16(16)                 |> # bits per sample
+#   write_utf8_raw('data')           |>
+#   write_uint32(length(audio) * 2)  |> # sampled data size
+#   write_int16(audio)
+# 
+# close(con)
 
