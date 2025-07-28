@@ -1,7 +1,7 @@
-381f124cbb2e8d1aef3e6317bc4fc08a *DESCRIPTION
-0839158ef079ee2e0680db6ed52cc404 *LICENSE
+6cf664e85d449f655a71b1318747f862 *DESCRIPTION
+6a5fa653fb36039b9edb7f7f7a846f02 *LICENSE
 ad735e0343bb4438d0ed5e8fd639845e *NAMESPACE
-c87b4716c546dd6875f5701aa90a510c *NEWS.md
+16a8268bb830a31bd9fcf34f7fb3848d *NEWS.md
 1912a4a9b58b3f8c10c5c4fb35cccce3 *R/aaa.R
 bf431b6a26d6b1c771a1d13e3d0e4719 *R/connection-config.R
 df6cc46bc7fae1a55b713f3d5065b35a *R/ctypesio-package.R
@@ -14,8 +14,8 @@ d321fbd68c9d2ba7b57e13a4ec24417c *R/read-float.R
 fce8fa1b01f754696b828f12d766854e *R/utils.R
 e3ff543bc6bcf2a426d4cbc6b644fbd8 *R/write-float.R
 7a0a16e50f8d123466f077417b308822 *R/write-int.R
-aa61bc0446ecf4d85d812abbbb54e02c *R/write-utf8.R
-6bd3d5cc3c09d4b1c869dbbd8225d6d1 *build/vignette.rds
+96e539849a80f2fed7e2cd20cbe278c9 *R/write-utf8.R
+a0482e656a202bdb5c8566c499414039 *build/vignette.rds
 56d1031786f096b933ef191d9401a4b4 *inst/doc/parse-jpeg.R
 39a8cc0a74c9f3afd023af315ada6d42 *inst/doc/parse-jpeg.Rmd
 e406543df8dbce4fa42e9ee214d06848 *inst/doc/parse-jpeg.html
@@ -42,7 +42,7 @@ e92b47b244b9ab6b067d239b6bf46642 *man/write_f64.Rd
 a82337b51bba2df7ff04450e3e2a303a *man/write_hex.Rd
 a05be9ebe632404e27bc7b5bec566d79 *man/write_raw.Rd
 b0534a2c79b37d1e002d3de2ac30a0f3 *man/write_uint8.Rd
-6dde5223367350a4f86dd0b4a37120f4 *man/write_utf8.Rd
+b82d3104ea95c04d11e20b8257944038 *man/write_utf8.Rd
 1a2196898f39baca601aef28f26f88f2 *src/Makevars
 a6c89c1067c40ee5438886292c70845e *src/init.c
 71471a8f3156f03f18a6d030ab97d2ff *src/parse-uint64-to-double.c
@@ -59,6 +59,7 @@ b00f6cbdf0798a5b87c48bfc2fd41fb5 *tests/testthat/test-na-check.R
 9d2c9e55d7c05a0a56e9d138b5fd73ef *tests/testthat/test-raw-read.R
 91a1b4a9bf52a0bea5fd013af29b162e *tests/testthat/test-raw-roundtrips.R
 35d4f52c0759c91e49d78bde23461eed *tests/testthat/test-raw-set-endian.R
+673b02aed87908701cb4016f6388d00b *tests/testthat/test-raw-with-attributes.R
 5fc78ef120e5620f2b8567a86d19d585 *tests/testthat/test-str-raw.R
 dad6b2f3a7ecbe9c1fa288271796bddc *tests/testthat/test-utf8-read.R
 7ee65fd032eb06fc0c4041bc2c1d9ff3 *tests/testthat/test-utf8.R

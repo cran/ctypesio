@@ -1,5 +1,12 @@
 
-# ctypesio 0.1.2
+# ctypesio 0.1.3  2025-07-28
+
+* [Bugfix] raw vector with attributes
+* [Feature] pass through the `from` argument for `iconv()` when 
+  writing utf8. Allows more flexibility if strings are not 
+  in plain ASCII or UTF-8 already
+
+# ctypesio 0.1.2  2025-01-18
 
 * Fix for UTF8 reading
 * Fix EOF check in `read_str_raw()`.  check number of raw bytes read, 
